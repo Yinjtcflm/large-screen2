@@ -19,7 +19,7 @@ export const Chart4 = () => {
         },
         yAxis: {
           type: "value",
-          spiltLine: { lineStyle: { color: "#073e78" } },
+          splitLine: { lineStyle: { color: "#073e78" } },
           axisLabel: {
             formatter(val) {
               return val * 100 + "%";

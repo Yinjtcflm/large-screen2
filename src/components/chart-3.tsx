@@ -26,13 +26,13 @@ export const Chart3 = () => {
           type: "category",
           boundaryGap: false,
           data: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
-          spiltLine: { show: true, lineStyle: { color: "#073e78" } },
+          splitLine: { show: true, lineStyle: { color: "#073E78" } },
           axisTick: { show: false },
           axisLine: { show: false },
         },
         yAxis: {
           type: "value",
-          spiltLine: { lineStyle: { color: "#073e78" } },
+          splitLine: { lineStyle: { color: "#073E78" } },
           axisLabel: {
             formatter(val) {
               return val * 100 + "%";
