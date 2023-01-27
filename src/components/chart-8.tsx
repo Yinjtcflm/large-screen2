@@ -25,7 +25,7 @@ export const Chart8 = () => {
               position: "inside",
               textStyle: { color: "white", fontSize: px(20) },
               formatter(options) {
-                return options.value * 100 + "%";
+                return (options.value * 100).toFixed(0) + "%";
               },
             },
             labelLine: { show: false },
@@ -36,8 +36,8 @@ export const Chart8 = () => {
             data: [
               { value: 0.25, name: "10-20岁" },
               { value: 0.3, name: "20-30岁" },
-              { value: 0.2, name: "30-40岁" },
-              { value: 0.1, name: "40-50岁" },
+              { value: 0.23, name: "30-40岁" },
+              { value: 0.07, name: "40-50岁" },
               { value: 0.15, name: "50-60岁" },
             ],
           },
@@ -53,15 +53,15 @@ export const Chart8 = () => {
       </div>
       <div className="legend">
         <span style={{ background: colors[0] }} />
-        10-20岁
+        10-20
         <span style={{ background: colors[1] }} />
-        20-30岁
+        20-30
         <span style={{ background: colors[2] }} />
-        30-40岁
+        30-40
         <span style={{ background: colors[3] }} />
-        40-50岁
+        40-50
         <span style={{ background: colors[4] }} />
-        50-60岁
+        50-60
       </div>
     </div>
   );
