@@ -42,7 +42,6 @@ export const Chart12 = () => {
             center: ["60%", "50%"],
             type: "pie",
             radius: "80%",
-            avoidLabelOverlap: false,
             label: { show: false },
             labelLine: { show: false },
             data: data,
