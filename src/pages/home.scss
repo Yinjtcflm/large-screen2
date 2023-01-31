@@ -238,10 +238,13 @@
         }
       }
     }
-    .战果 {
+    .战果,
+    .作案手段 {
+      padding: 0 px(24);
       > table {
-        border-radius: px(10);
-        margin-top: px(38);
+        width: 100%;
+        table-layout: fixed;
+        margin-top: px(25);
         border-collapse: collapse;
         th,
         td {
@@ -292,6 +295,15 @@
             rgba(185, 42, 232, 1) 0%,
             rgba(103, 115, 231, 1) 100%
           );
+        }
+      }
+    }
+    .作案手段 {
+      > table {
+        tbody {
+          td {
+            height: px(26);
+          }
         }
       }
     }
