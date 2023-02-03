@@ -1,15 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 import { createEchartsOptions } from "../shared/create-echarts-options";
-import { px } from "../shared/px";
-import json from "../geo/china.json";
+import china from "../geo/china.json";
 
 export const Chart6 = () => {
   const divRef = useRef(null);
   const colors = { 青海省: "#BB31F7", 甘肃省: "#15b8fd", 四川省: "#06e1ee" };
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
-    echarts.registerMap("CN", json);
+    // @ts-ignore
+    echarts.registerMap("CN", china);
     myChart.setOption(
       createEchartsOptions({
         xAxis: { show: false },
