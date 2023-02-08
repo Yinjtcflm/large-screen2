@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 import { createEchartsOptions } from "../shared/create-echarts-options";
+import { px } from "../shared/px";
 import china from "../geo/china.json";
 
 export const Chart6 = () => {
@@ -17,7 +18,7 @@ export const Chart6 = () => {
         series: [
           {
             type: "map",
-            mapTap: "CN",
+            mapType: "CN",
             data: [
               {
                 name: "甘肃省",
@@ -37,7 +38,7 @@ export const Chart6 = () => {
           },
           {
             type: "map",
-            mapTap: "CN",
+            mapType: "CN",
             data: [
               {
                 name: "四川省",
@@ -56,7 +57,7 @@ export const Chart6 = () => {
           },
           {
             type: "map",
-            mapTap: "CN",
+            mapType: "CN",
             data: [
               {
                 name: "青海省",
@@ -79,16 +80,16 @@ export const Chart6 = () => {
   }, []);
   return (
     <div className="bordered 籍贯分布">
-      <h2>全兰州市犯罪人员籍贯分布地</h2>
+      <h2>全市犯罪人员籍贯分布地</h2>
       <div className="wrapper">
         <div ref={divRef} className="chart" />
         <div className="legend bordered">
           <span className="icon" style={{ background: colors["甘肃省"] }} />
-          甘肃籍
+          甘岭籍
           <span className="icon" style={{ background: colors["四川省"] }} />
-          四川籍
+          边城籍
           <span className="icon" style={{ background: colors["青海省"] }} />
-          青海籍
+          寒国籍
         </div>
         <div className="notes">此地图只显示了部分中国区域</div>
       </div>
