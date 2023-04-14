@@ -8,10 +8,29 @@
   color: white;
   font-size: px(16);
   > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: px(99);
     background-size: cover;
     width: px(2420);
     margin: 0 auto;
+    background: #0c0d2b;
+    .clock {
+      font-size: px(24);
+      margin-left: px(48);
+    }
+    > h1 {
+      font-size: px(40);
+      text-align: center;
+      margin-right: px(148);
+    }
+    .icon {
+      width: px(72);
+      height: px(72);
+      display: flex;
+      margin-right: px(56);
+    }
   }
   > footer {
     height: px(68);

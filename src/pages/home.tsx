@@ -15,12 +15,27 @@ import { Chart11 } from "../components/chart-11";
 import { Chart12 } from "../components/chart-12";
 import { Chart13 } from "../components/chart-13";
 import { Chart14 } from "../components/chart-14";
+import Time from "../components/time";
 
 export const Home = () => {
   const year = new Date().getFullYear();
   return (
     <div className="home">
-      <header className="x" style={{ backgroundImage: `url(${headerBg})` }} />
+      <header className="x">
+        <div className="clock">
+          <Time />
+        </div>
+        <h1>杭州公安合成作战平台</h1>
+        <div className="icon">
+          <svg className="dingwei">
+            <use xlinkHref="#icon-dingwei"></use>
+          </svg>
+          <svg className="qingtian">
+            <use xlinkHref="#icon-duoyun"></use>
+          </svg>
+        </div>
+      </header>
+      {/* <header className="x" style={{ backgroundImage: `url(${headerBg})` }} /> */}
       <main>
         <section className="section1">
           <Chart1 />
