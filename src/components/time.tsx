@@ -10,7 +10,8 @@ function Time() {
     const month = time.getMonth() + 1; //月
     const day = time.getDate(); //日
     const hour = time.getHours(); //时
-    const minutes = time.getMinutes(); //分
+    const m = time.getMinutes(); //分
+    const minutes = m <= 9 ? "0" + m : m;
     const s = time.getSeconds(); //秒
     const seconds = s <= 9 ? "0" + s : s;
     const t =
