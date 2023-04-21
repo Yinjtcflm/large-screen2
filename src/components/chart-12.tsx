@@ -5,17 +5,24 @@ import { px } from "../shared/px";
 
 export const Chart12 = () => {
   const divRef = useRef(null);
-  const colors = ["#F46064", "#F38E1C", "#1CDB7C", "#8D70F8", "#33A4FA"];
+  const colors = [
+    "#F46064",
+    "#F38E1C",
+    "#1CDB7C",
+    "#eb0fc2",
+    "#0bd4f3",
+    "#0cb00c",
+  ];
   const data = [
-    { value: 0.08, name: "东岗路" },
-    { value: 0.06, name: "段家滩" },
-    { value: 0.11, name: "雁北" },
-    { value: 0.09, name: "五泉山" },
-    { value: 0.12, name: "中山路" },
-    { value: 0.06, name: "庆阳路" },
-    { value: 0.08, name: "武都路" },
-    { value: 0.08, name: "酒泉路" },
-    { value: 0.08, name: "天水路" },
+    { value: 0.08, name: "黄龙路" },
+    { value: 0.06, name: "文一路" },
+    { value: 0.11, name: "第一大街" },
+    { value: 0.09, name: "浦玉路" },
+    { value: 0.12, name: "虎跑路" },
+    { value: 0.06, name: "龙泉路" },
+    { value: 0.08, name: "竞舟路" },
+    { value: 0.08, name: "月雅路" },
+    { value: 0.08, name: "白沙泉路" },
   ];
   useEffect(() => {
     var myChart = echarts.init(divRef.current);

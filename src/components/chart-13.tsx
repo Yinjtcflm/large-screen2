@@ -10,15 +10,15 @@ export const Chart13 = () => {
       createEchartsOptions({
         xAxis: {
           data: [
-            "东岗",
-            "段家滩",
-            "雁北",
-            "五泉山",
-            "中山",
-            "庆阳",
-            "武都",
-            "酒泉",
-            "天水路",
+            "黄龙路",
+            "文一路",
+            "第一大街",
+            "浦玉路",
+            "虎跑路",
+            "龙泉路",
+            "竞舟路",
+            "月雅路",
+            "白沙泉路",
           ],
           axisTick: { show: false },
           axisLine: {

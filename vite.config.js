@@ -3,6 +3,7 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/large-screen2/dist/",
+  // base: "/large-screen2/dist/",
+  base: "/",
   plugins: [reactRefresh()],
 });
